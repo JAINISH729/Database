@@ -95,5 +95,5 @@ The user interface is designed with a modern dark theme.
 
 ### SCREENSHOT OF OUTPUT:
 <img width="1919" height="670" alt="Screenshot 2026-04-27 210018" src="https://github.com/user-attachments/assets/c915390f-7f32-4fd9-876c-36ba650297e4" />
+<br/><br/>
 <img width="1574" height="514" alt="Screenshot 2026-04-27 210126" src="https://github.com/user-attachments/assets/7136e0ed-b498-4e58-9464-3609351b812d" />
-
