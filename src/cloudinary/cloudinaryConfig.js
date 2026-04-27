@@ -1,0 +1,11 @@
+const CLOUDINARY_CLOUD_NAME = "dl29jmcpt";
+const CLOUDINARY_UPLOAD_PRESET = "m6i2qt0u";
+
+const CLOUDINARY_UPLOAD_URL =
+  `https://api.cloudinary.com/v1_1/${CLOUDINARY_CLOUD_NAME}/upload`;
+
+export {
+  CLOUDINARY_CLOUD_NAME,
+  CLOUDINARY_UPLOAD_PRESET,
+  CLOUDINARY_UPLOAD_URL
+};

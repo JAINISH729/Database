@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #c084fc;
+}
+
+.search {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 20px;
+  background: #1e293b;
+  color: white;
+}
+
+.upload-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.upload-box input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  background: #1e293b;
+  color: white;
+  border: none;
+}
+
+.upload-box button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #a855f7, #6366f1);
+  color: white;
+  cursor: pointer;
+}
+
+.file-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 12px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.file-name {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions a {
+  text-decoration: none;
+  color: #a855f7;
+}
+
+.actions button {
+  background: #ef4444;
+  border: none;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hidden-input {
+  display: none
+}
+
+.choose-btn {
+  background: #1e293b;
+  color: #e5e7eb;
+  border: 1px dashed #a855f7;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .3s
+}
+
+.choose-btn:hover {
+  background: #2e3b55
+}
+
+.file-name-text {
+  font-size: 13px;
+  color: #9ca3af;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+
+.upload-btn {
+  background: linear-gradient(135deg, #a855f7, #6366f1);
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer
+}
+
+.preview {
+  width: 60px;
+  border-radius: 6px;
+  margin-left: 10px
+}
