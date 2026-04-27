@@ -1,16 +1,99 @@
-# React + Vite
+# 📂 Digital Document Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web application to upload, manage, and preview documents using **React (Vite)**, **Redux Toolkit**, and **Cloudinary**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* 📤 Upload files (images, PDFs, documents)
+* 🖼️ Preview uploaded images
+* 🔍 Search files by name
+* 🗑️ Delete files from UI
+* ☁️ Cloud storage using Cloudinary
+* 💾 Local storage persistence (no backend required)
+* 🎨 Modern dark UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Frontend:** React (Vite)
+* **State Management:** Redux Toolkit
+* **Cloud Storage:** Cloudinary
+* **Styling:** Custom CSS (AI-assisted)
+
+---
+
+## 📂 Folder Structure
+
+```
+src/
+├── app/
+│   └── store.js
+├── features/
+│   └── fileSlice.js
+├── components/
+│   ├── UploadFile.jsx
+│   ├── FileList.jsx
+│   ├── FileCard.jsx
+│   └── SearchFilter.jsx
+├── cloudinary/
+│   └── cloudinaryConfig.js
+├── pages/
+│   └── Dashboard.jsx
+├── App.jsx
+├── main.jsx
+└── App.css
+```
+
+---
+
+## ☁️ Cloudinary Setup
+
+1. Create an account at https://cloudinary.com
+
+2. Go to **Settings → Upload → Upload Presets**
+
+3. Create a preset:
+
+   * Mode: **Unsigned**
+   * Name: `m6i2qt0u` (or update in code)
+
+4. Add your Cloudinary config:
+
+```js
+const CLOUDINARY_CLOUD_NAME = "your_cloud_name";
+const CLOUDINARY_UPLOAD_PRESET = "your_preset";
+```
+
+---
+
+## ⚠️ Notes
+
+* Files are stored in **Cloudinary**
+* Metadata is stored in **localStorage**
+* Delete only removes files from UI (not Cloudinary server)
+
+---
+
+## 🎨 UI & Design
+
+The user interface is designed with a modern dark theme.
+
+> ⚡ The CSS styling in this project is **AI-assisted** to achieve a clean and modern design quickly.
+
+---
+
+## 🔮 Future Improvements
+
+* Drag & drop upload
+* File categories
+* Backend integration for secure delete
+* User authentication
+* Progress bar for uploads
+
+### SCREENSHOT OF OUTPUT:
+<img width="1919" height="670" alt="Screenshot 2026-04-27 210018" src="https://github.com/user-attachments/assets/c915390f-7f32-4fd9-876c-36ba650297e4" />
+<img width="1574" height="514" alt="Screenshot 2026-04-27 210126" src="https://github.com/user-attachments/assets/7136e0ed-b498-4e58-9464-3609351b812d" />
+
